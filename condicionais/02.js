@@ -3,7 +3,10 @@
 // valor `1` a `x` se `x`
 // for maior do que `y`.
 
-
+if (x > y){
+    x=1
+    console.log (`ok`)
+}
 
 
 // Escreva a expressão em
@@ -12,22 +15,32 @@
 // em 5 unidades caso o valor
 // inicial de `score` esteja
 // entre 80 e 90.
+let score = 85
 
-
+if (score >= 80 && score <= 90){
+score += 5 // score = score +5 
+}
+ 
 
 
 // Reescreva a seguinte condicional
 // sem usar o operador `!`:
 // item = ! ( i < 10 || v >= 50 )
 
+if (i < 10 || v >= 50){  // corrigir com o git
 
+}
 
 
 // Escreva a expressão em
 // Javascript que retorna `true`
 // se um número é par e `false`
 // se um número é impar.
-
+if (x % 2 == 0) {
+    console.log (true)
+}   else{ 
+    console.log (false)
+} 
 
 
 
@@ -36,9 +49,11 @@
 // se dois números forem positivos
 // e `false` se dois números 
 // forem negativos.
-
-
-
+if (x > 0 && y > 0) {
+    console.log (true)
+} else if (x < 0 && y < 0) {
+    console.log(false)
+} 
 
 // Escreva a expressão em
 // Javascript que retorna `true`
@@ -46,3 +61,9 @@
 // sinal (+ / -) e `false` 
 // se dois números tiverem sinais
 // diferentes.
+if (x > 0 && y > 0 ||
+    x < 0 && y < 0) {
+    console.log(true)
+} else {
+    console.log(false)
+}

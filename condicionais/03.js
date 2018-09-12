@@ -5,7 +5,7 @@
 const rand = Math.floor(Math.random() * 21) - 10
 
 // A
-if (rand > 0) {
+if (rand > 0) { 
 	console.log(`O valor é positivo: ${rand}!`)
 } else {
 	if (rand < 0) {

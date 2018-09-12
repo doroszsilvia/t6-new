@@ -3,23 +3,50 @@
 // switch (day) {
 // 	case 0: 
 // 		console.log("Segunda")
+        break 
 // 	case 1:
 // 		console.log("Terça")
+        break
 // 	case 2:
 // 		console.log("Quarta")
+        break
 // 	case 3:
 // 		console.log("Quinta")
+        break
 // 	case 4:
 // 		console.log("Sexta")
+        break
 // 	case 5:
 // 		console.log("Sábado")
+        break
 // 	case 6:
 // 		console.log("Domingo")
+        break
 // 	default:
 // 		throw "Dia inválido!"
 // }
-
-
+if (day === 0){
+    console.log("segunda")
+} else if (day === 1) {
+    console.log("terça")
+}
+else if (day === 2)
+{ console.log("quarta")
+}
+else if (day === 3){
+    console.log("quinta")
+}
+else if (day ===4){
+    console.log("sexta")
+}
+else if (day === 5){
+    console.log("sabado")
+}
+else if (day === 6){
+    console.log("domingo")
+}else {
+    throw "dia inválido"
+}
 
 
 // Reescreva a próxima expressão usando
@@ -31,7 +58,7 @@
 // 	rand = false
 // }
 
-
+let rand = Math.random() > 0.5 ? true : false 
 
 
 
@@ -48,3 +75,8 @@
 // } else if (b > r && b > g) {
 // 	color = "Azul"
 // }
+
+
+color = r > g && r > b ? "vermelho" : g > b && g > r ? "Verde" : b > r && b > g ? "Azul" : "cor nao definida"
+
+
