@@ -8,6 +8,9 @@ if (x > y){
     console.log (`ok`)
 }
 
+if (x > y) {
+	x = 1
+}
 
 // Escreva a expressão em
 // Javascript que aumenta o
@@ -22,6 +25,9 @@ score += 5 // score = score +5
 }
  
 
+if (score >= 80 && score <= 90) {
+	score += 5 // score = score + 5
+}
 
 // Reescreva a seguinte condicional
 // sem usar o operador `!`:
@@ -31,6 +37,12 @@ if (i < 10 || v >= 50){  // corrigir com o git
 
 }
 
+item = ( i < 10 || v >= 50 ) === false
+// ou...
+item = ( i >= 10 && v < 50 )
+// refs: 
+// - http://www.math.toronto.edu/preparing-for-calculus/3_logic/we_3_negation.html
+// - https://centraldefavoritos.com.br/2017/01/02/negacao-de-proposicoes/ (ver: "Negação de uma Proposição Disjuntiva")
 
 // Escreva a expressão em
 // Javascript que retorna `true`
@@ -43,6 +55,20 @@ if (x % 2 == 0) {
 } 
 
 
+if (n % 2 === 0) {
+	console.log(true)
+} else {
+	console.log(false)
+}
+// ou ...
+if (n & 1 === 0) {
+	console.log(true)
+} else {
+	console.log(false)
+}
+// refs: 
+// - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators
+// - https://code.tutsplus.com/articles/understanding-bitwise-operators--active-11301 (ver: "The & Operator")
 
 // Escreva a expressão em
 // Javascript que retorna `true` 
@@ -54,6 +80,10 @@ if (x > 0 && y > 0) {
 } else if (x < 0 && y < 0) {
     console.log(false)
 } 
+	console.log(true)
+} else if(x < 0 && y < 0) {
+	console.log(false)
+}
 
 // Escreva a expressão em
 // Javascript que retorna `true`
@@ -66,4 +96,24 @@ if (x > 0 && y > 0 ||
     console.log(true)
 } else {
     console.log(false)
+if (x > 0 && y > 0 || 
+	x < 0 && y < 0) {
+	console.log(true)
+} else {
+	console.log(false)
+}
+// ou...
+if (x > 0 && y > 0) {
+	console.log(true)
+} else if (x < 0 && y < 0) {
+	console.log(true)
+} else {
+	console.log(false)
+}
+// ou...
+if (Math.sign(x) === Math.sign(y) && 
+	Math.sign(x) !== 0) {
+	console.log(true)
+} else {
+	console.log(false)
 }
